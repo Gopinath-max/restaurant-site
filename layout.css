@@ -1,0 +1,39 @@
+/* css/layout.css */
+body {
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.container--narrow {
+  max-width: 800px;
+}
+
+section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+/* Two Column Layout Support */
+.split-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .split-layout {
+    flex-direction: row;
+  }
+  
+  .split-layout > * {
+    flex: 1;
+  }
+}
