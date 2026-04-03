@@ -1,0 +1,87 @@
+/* css/typography.css */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=JetBrains+Mono:wght@400&family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap');
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ivory);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* Fluid Typographic Scale */
+.text-display {
+  font-size: var(--text-display); /* ~48px to ~96px */
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.text-headline {
+  font-size: var(--text-headline); /* ~36px to ~64px */
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.text-title {
+  font-size: var(--text-title); /* ~24px to ~36px */
+  font-weight: 400;
+}
+
+.text-subtitle {
+  font-size: var(--text-subtitle); /* ~18px to ~24px */
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.text-body {
+  font-size: var(--text-body); /* ~16px to ~18px */
+}
+
+.text-caption {
+  font-size: var(--text-caption); /* ~12px to ~14px */
+}
+
+.text-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Utility Classes */
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-ivory {
+  color: var(--color-ivory);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+/* Balancing */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Decorative Ornament */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.ornament::before,
+.ornament::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: var(--color-gold);
+}
